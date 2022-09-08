@@ -29,6 +29,7 @@ COPY [ \
       "create-links.sh", \
       "build-chromium.sh", \
       "patches/0007-Delete-compiler-options-not-available-in-release-ver.patch", \
+      "patches/0013-clang-Re-enable-opaque-pointers.patch", \
       "patches/0012-ozone-wayland-don-t-build-xcb-for-pure-wayland-build.patch", \
       "/root/"]
 

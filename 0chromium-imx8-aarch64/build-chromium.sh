@@ -44,5 +44,6 @@ gn gen --args='use_cups=false ffmpeg_branding="Chrome" proprietary_codecs=true u
 
 patch -f -p1 < /root/0007-Delete-compiler-options-not-available-in-release-ver.patch && \
 patch -f -p1 < /root/0012-ozone-wayland-don-t-build-xcb-for-pure-wayland-build.patch && \
+patch -f -p1 < /root/0013-clang-Re-enable-opaque-pointers.patch && \
 
 autoninja -C out/Default/ chrome
