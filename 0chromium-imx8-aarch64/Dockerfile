@@ -14,7 +14,7 @@
 #
 
 # For testing in the LmP
-# docker build --tag hub.foundries.io/lmp/0chromium-imx8-aarch64:latest .
+# docker build --tag munoz0raul/0chromium-imx8-aarch64:latest .
 FROM debian:bullseye-20220316-slim AS build
 
 LABEL maintainer="Raul Munoz <raul@foundries.io>"

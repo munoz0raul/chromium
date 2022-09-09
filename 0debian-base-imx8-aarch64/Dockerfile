@@ -14,10 +14,10 @@
 #
 
 # For testing in the LmP
-# docker build --tag hub.foundries.io/lmp/0debian-base-imx8-aarch64:latest .
-# docker run -it --rm --device-cgroup-rule='c 199:* rmw' --device-cgroup-rule='c 226:* rmw' -v /run/user/63:/run/user/63 -v /dev/dri:/dev/dri -v /dev/galcore:/dev/galcore --entrypoint /bin/bash hub.foundries.io/lmp/0debian-base-imx8-aarch64:latest
+# docker build --tag munoz0raul/0debian-base-imx8-aarch64:latest .
+# docker run -it --rm --device-cgroup-rule='c 199:* rmw' --device-cgroup-rule='c 226:* rmw' -v /run/user/63:/run/user/63 -v /dev/dri:/dev/dri -v /dev/galcore:/dev/galcore --entrypoint /bin/bash munoz0raul/0debian-base-imx8-aarch64:latest
 # or
-# docker run -it --rm --device-cgroup-rule='c 199:* rmw' --device-cgroup-rule='c 226:* rmw' -v /run/user/63:/run/user/63 -v /dev/dri:/dev/dri -v /dev/galcore:/dev/galcore hub.foundries.io/lmp/0debian-base-imx8-aarch64:latest
+# docker run -it --rm --device-cgroup-rule='c 199:* rmw' --device-cgroup-rule='c 226:* rmw' -v /run/user/63:/run/user/63 -v /dev/dri:/dev/dri -v /dev/galcore:/dev/galcore munoz0raul/0debian-base-imx8-aarch64:latest
 FROM debian:bullseye-20220316-slim
 
 LABEL maintainer="Raul Munoz <raul@foundries.io>"
